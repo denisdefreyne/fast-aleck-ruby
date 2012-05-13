@@ -30,12 +30,21 @@ module FastAleck
 
   # Processes the given string.
   #
+  # @option params [Boolean] :all (false) true if all options should be
+  #   activated, false if not
+  #
   # @option params [Boolean] :wrap_amps (false) true if ampersands should be
   #   wrapped in `<span class="amp">`, false if not
+  #
+  # @option params [Boolean] :wrap_caps (false) true if capital letters should
+  #   be wrapped in `<span class="caps">`, false if not
   #
   # @option params [Boolean] :wrap_quotes (false) true if single quotes should
   #   be wrapped in `<span class="quo">` and double quotes in
   #   `<span class="dquo">`, false if not
+  #
+  # @option params [Boolean] :widont (false) true if the last space of a block
+  #   element should be replaced with a non-breaking space, false if not.
   #
   # @return [String] The processed string
   def self.process(s, params={})
