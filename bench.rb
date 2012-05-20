@@ -4,7 +4,7 @@ require 'fast-aleck'
 require 'rubypants'
 require 'typogruby'
 
-alice = File.read('../input/alice.txt')
+alice = File.read('bench.txt')
 
 Benchmark.bmbm do |r|
   r.report('alice-rubypants (x10)') do 
