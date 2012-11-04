@@ -18,6 +18,8 @@ Gem::Specification.new do |s|
                          [ 'fast-aleck.gemspec' ]
   s.require_paths      = [ 'lib' ]
 
+  s.add_runtime_dependency('ffi', '~> 1.0')
+
   s.rdoc_options     = [ '--main', 'README.md' ]
   s.extra_rdoc_files = [ 'ChangeLog', 'LICENSE', 'README.md', 'NEWS.md' ]
 end
